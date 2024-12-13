@@ -88,42 +88,56 @@ const commands = {
       term.writeln('673639')
     },
     about: (term) => {
-      term.writeln('I am a software developer with a passion for building innovative solutions.')
+      term.writeln(`👋 Hello! I'm Muhammed Rahil, a passionate Python developer and seasoned backend engineer with a deep understanding of software development. I thrive in crafting robust and efficient solutions using cutting-edge technologies. 💼 In my professional journey, I've honed my skills in Python, Django, and database management systems like PostgreSQL and MySQL. My proficiency in version control with Git and experience collaborating on projects through platforms like Bitbucket and Jira have been integral to my success. 🚀 I embrace the Agile methodology, allowing me to adapt quickly to changing requirements and deliver results with precision. My ability to multitask effectively enables me to tackle complex projects while maintaining a keen eye for detail. 🌐 I'm enthusiastic about staying up-to-date with the ever-evolving tech landscape, which empowers me to create innovative and scalable solutions. I'm a firm believer in continuous learning, and I'm always excited to take on new challenges.Looking forward to connecting with like-minded professionals and sharing insights into the world of software engineering!`)
     },
     experience: (term) => {
-      term.writeln('I have 5 years of experience in software development.')
-    },
-    skills: (term) => {
-      term.writeln('I am proficient in JavaScript, Python, and Java.')
-    },
-    projects: (term) => {
-      term.writeln('I have worked on several projects, including a web scraper and a chatbot.')
-    },
-    project: (term, args) => {
-      if (args.length === 0) {
-        term.writeln('Please specify a project name.')
-      } else {
-        const projectName = args[0]
-        if (projectName === 'web-scraper') {
-          term.writeln('This is a web scraper project that extracts data from websites.')
-        } else if (projectName === 'chatbot') {
-          term.writeln('This is a chatbot project that uses natural language processing to respond to user queries.')
-        } else {
-          term.writeln('Project not found.')
-        }
+      term.writeln('I have 3 years of experience in software development.')
+      const experience = ["Swynfords","ZaigoInfotech"]
+      for (let index = 0; index < experience.length; index++) {
+        const element = experience[index];
+        term.writeln(`${index + 1} - ${element} Pvt Ltd, about known company details please type 'experience ${element}'`)
       }
     },
+    skills: (term) => {
+      let skill_list = ["Python","Django","Django Restframework","Flask", "Celery","Redis", "Web Scrapping","Thread","Pool of Threads","Cron job", "PostgreSQL","MySQL","Work bench", "Jira Software", "Bitbucket", "Git And GitHub","Postman", "Docker","Figma","HTML 5","CSS", "Bootstrap", "JavaScript", "Ajax", "Axios","Javascript","JQuery","Cron Job","Bootstrap","Software Developement","agile methodology","Microservice Architecture","Api Development","Pandas","debugging","Problem Solver","JWT Authentication"]
+      for (let index = 0; index < skill_list.length; index++) {
+        const element = skill_list[index];
+        term.writeln(`${index + 1} - ${element}`)
+      }
+    },
+    // projects: (term) => {
+    //   term.writeln('I have worked on several projects, including a web scraper and a chatbot.')
+    // },
+    // project: (term, args) => {
+    //   if (args.length === 0) {
+    //     term.writeln('Please specify a project name.')
+    //   } else {
+    //     const projectName = args[0]
+    //     if (projectName === 'web-scraper') {
+    //       term.writeln('This is a web scraper project that extracts data from websites.')
+    //     } else if (projectName === 'chatbot') {
+    //       term.writeln('This is a chatbot project that uses natural language processing to respond to user queries.')
+    //     } else {
+    //       term.writeln('Project not found.')
+    //     }
+    //   }
+    // },
     github: (term) => {
-      term.writeln('https://github.com/muhammedrahilm')
+      term.writeln('https://github.com/muhammedrahil')
     },
     linkedin: (term) => {
-      term.writeln('https://www.linkedin.com/in/muhammedrahilm/')
+      term.writeln('https://www.linkedin.com/in/muhammed-rahil-m-a22a03264/')
     },
     stackoverflow: (term) => {
-      term.writeln('https://stackoverflow.com/users/1234567/muhammedrahilm')
+      term.writeln('https://stackoverflow.com/users/26818017/muhammed-rahil-m')
     },
     packages: (term) => {
-      term.writeln('I have created several Python packages, including a package for data analysis.')
+      term.writeln('I have created several Python packages')
+      let package_list = ["cloudspark","threadyq"]
+      for (let index = 0; index < package_list.length; index++) {
+        const element = package_list[index];
+        term.writeln(`${index + 1} - ${element}`)
+      }
     },
     'packages <package_name>': (args) => {
       if (args.length === 0) {
