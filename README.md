@@ -4,7 +4,7 @@ Personal portfolio showcasing projects, skills, and contact information. This re
 
 ## Demo
 
-Link to live demo: REPLACE_WITH_LIVE_URL
+Link to live demo: "portfolio-zeta-rosy-42.vercel.app"
 
 ## Features
 
